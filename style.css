@@ -3,11 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-ul li  {
-    list-style: none;   
+.divimg {
+  position: absolute;
+    opacity: 0.5;
 }
 
+li {
+    list-style: none; 
+  
+}
+ a{
+    text-decoration: none;
+ }
+
 .header {
+    
    display: flex;
    justify-content: space-around;
    background-color: darkblue;
@@ -19,10 +29,10 @@ ul li  {
 .nav-item  {
     display: flex;
 }
+
 .nav-item li a {
     color: white;
     margin: 5px;
-    
 }
 
 .nav-item li a:hover {
@@ -39,7 +49,7 @@ ul li  {
     align-content: center;  
     max-width: 992px; 
     max-height: 800px;
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .apresentacao{
@@ -55,14 +65,17 @@ ul li  {
     font-size: 50px;
     text-shadow: 10px;
     text-align: start;
+    background-color: white;
  }
 
  .apresentacao p{
     color: blue;
     margin: 20px;
+    font-size: 20px;
+    background-color: white;
  }
 
-#saibamais{
+.saibamais{
     display: block;
     width: 100%;
     border-radius: 100px;
@@ -70,6 +83,11 @@ ul li  {
     background-color: darkblue;
     margin: 5px 0 0 0;
     color: white;
+    text-align: center;
+}
+.saibamais:hover{
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
 }
 .img1 {
     display: flex;
@@ -85,12 +103,88 @@ ul li  {
     display: flex;
     max-width: 400px;
 }
-/* rgba(0, 102, 255, 0.664);  */
+
 .quem-somos {
-    background: linear-gradient(90deg,rgb(0, 95, 139),rgb(5, 160, 231),rgb(4, 37, 224));
+     background: linear-gradient(90deg,rgb(0, 95, 139),rgb(5, 160, 231),rgb(4, 37, 224)); */
     font-size:20px;
-    border: 2px solid black;
+     border: 2px solid black;
     border-top-left-radius: 25px;
     border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 50px; 
 }
+
+#servico{
+    display: flex;
+    justify-content: flex-start;
+    max-height: 50px
+}
+
+.centro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 945px;
+    margin: 0 auto;
+    background-color: blue;
+}
+.centro-item{
+    display: flex;
+    flex-flow: column-reverse wrap;
+    padding: 15px;
+    color: white;
+}
+.centro-item a{
+    background-color: rgb(3, 112, 112);
+    color: rgb(0, 0, 0);
+    max-width: 80px;
+    margin:0 0 10px 0;
+    border: solid black 1px;
+    text-align: center;
+    border-radius: 25%;
+}
+
+.centro-item a:hover{
+    color: white;
+    max-width: 85px;
+    transition: all 1s ease-out;
+    background-color:rgba(49, 47, 173, 1.5)
+}
+
+.svg1{
+    background-image: url(images/avianzinho.svg);
+}
+
+.modelo{
+    border: 4px solid black;
+    margin: 25px;
+    padding: 10px;
+    background-color: white;
+}
+
+ .modelo:hover{
+    border: #5FA97A  solid 4px;
+ }
+
+.modelo h3{
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    border-radius: 25%;
+    margin: 0 0 10px 0
+}
+
+.modelo a {
+    margin: 15px 0 0 0;
+}
+
+.fim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-color: blue;
+    height: 200px;
+    margin: 20px 0 0 0;
+    text-align: center;
+ }
